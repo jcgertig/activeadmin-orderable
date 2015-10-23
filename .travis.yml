@@ -1,0 +1,24 @@
+sudo: false
+language: ruby
+
+rvm:
+  - 2.1.5
+  - 2.2.2
+  - ruby-head
+
+matrix:
+  allow_failures:
+    - rvm: ruby-head
+  fast_finish: true
+
+before_install: gem update --remote bundler
+install:
+  - bundle install --retry=3
+script:
+  - bundle exec rake dummy:prepare
+  - bundle exec rspec
+  - bundle exec rubocop
+
+addons:
+  code_climate:
+    repo_token: 085c9fc58ac3efcd9a8b311ee77bcec0b5c048575cde8a2234f7c63550910969

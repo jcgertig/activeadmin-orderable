@@ -1,0 +1,13 @@
+.activeadmin_sortable_table .handle {
+    cursor: ns-resize;
+    font-size: 1.5em;
+}
+
+.activeadmin_sortable_table .move_to_top {
+    padding-left: 1em;
+    /*cursor: pointer;*/
+    text-decoration: none;
+    font-size: 1.5em;
+    color: rgb(51, 51, 51);
+}
+
