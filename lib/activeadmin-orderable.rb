@@ -22,7 +22,7 @@ module ActiveAdmin
       HANDLE = '&#x2195;'.html_safe
 
       def orderable_handle_column options = {}
-        column '', :class => "activeadmin-orderable" do |resource|
+        column options[:title], :class => "activeadmin-orderable" do |resource|
           sort_url = if options[:url].is_a? Symbol
             send options[:url], resource
           elsif options[:url].respond_to? :call
