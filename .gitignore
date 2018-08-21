@@ -1,9 +1,13 @@
+spec/dummy/log/*.log
+spec/dummy/tmp/
+spec/dummy/public/assets
+spec/dummy/.sass-cache
+spec/dummy/db/test.sqlite3
 *.gem
 *.rbc
 .bundle
 .config
 .yardoc
-Gemfile.lock
 InstalledFiles
 _yardoc
 coverage
@@ -15,3 +19,4 @@ spec/reports
 test/tmp
 test/version_tmp
 tmp
+Gemfile.lock
